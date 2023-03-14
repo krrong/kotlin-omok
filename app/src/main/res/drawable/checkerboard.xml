@@ -1,0 +1,42 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Define the background color of the checkerboard (a light brown color) -->
+    <solid android:color="#D2B48C" />
+
+    <!-- Define the size of each square on the checkerboard -->
+    <size android:width="60dp"
+        android:height="60dp" />
+
+    <!-- Define the checkerboard pattern using a layer list -->
+    <item>
+        <!-- Define a black square -->
+        <shape>
+            <solid android:color="#000000" />
+        </shape>
+    </item>
+
+    <item android:left="30dp" android:top="30dp">
+        <!-- Define a white square -->
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <item android:left="60dp">
+        <!-- Define a black square -->
+        <shape>
+            <solid android:color="#000000" />
+        </shape>
+    </item>
+
+    <item android:top="30dp" android:right="30dp">
+        <!-- Define a white square -->
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Add 209 more items to create the full 15x15 checkerboard pattern -->
+
+</shape>
